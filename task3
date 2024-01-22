@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body {
+            background-image: url('klj.jpg');
+            background-repeat: no-repeat;
+            background-size: 2100px 1900px;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .display {
+            margin:54px 74px;
+            width: 66%;
+            padding: 8px 12px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            font-size: 18px;
+            text-align: right;
+            height: 100px;
+            background-color: grey;
+        }
+        .buttons button {
+            width: 99px;
+            height: 70px;
+            background-color: grey;
+            border: none;
+            border-radius: 5px;
+            font-size: 23px;
+            margin: 5px ;
+            cursor: pointer;
+            align-items: center;
+        }
+        .buttons{
+            padding-right: 40px;
+        }
+        .buttons button:hover {
+            background-color: #ddd;
+        }
+        .calc{
+            background-color: #f1e9e9;
+             border-radius: 10px;
+            color: blue;
+            padding: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calc">
+    
+       
+        <div>
+            <input type="text" id="display" class="display" disabled>
+        </div>
+        <div class="buttons">
+            <ul>
+                <button class="number" onclick="AddNumber(7)">7</button>
+                <button class="number" onclick="AddNumber(8)">8</button>
+                <button class="number" onclick="AddNumber(9)">9</button>
+                <button type="button"  class="operator" onclick="setOperator('/')">/</button>
+            </ul>
+            <ul>
+                <button class="number" onclick="AddNumber(4)">4</button>
+                <button class="number" onclick="AddNumber(5)">5</button>
+                <button class="number" onclick="AddNumber(6)">6</button>
+                <button type="button" class="operator" onclick="setOperator('*')">*</button>
+            </ul>
+            <ul>
+                <button class="number" onclick="AddNumber(1)">1</button>
+                <button class="number" onclick="AddNumber(2)">2</button>
+                <button class="number" onclick="AddNumber(3)">3</button>
+                <button type="button"  class="operator" onclick="setOperator('-')">-</button>
+            </ul>
+            <ul>
+                <button class="number" onclick="AddNumber(0)">0</button>
+                <button onclick="clearDisplay()">Clear</button>
+                <button onclick="calculate()">=</button>
+                <button type="button"  class="operator" onclick="setOperator('+')">+</button>
+            </ul>
+        </div>
+    </div>
+    <script src="tesk.js"></script>
+</body>
+
+</html>
