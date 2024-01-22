@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .bar1 {
+            background-image: url('task2.jpg');
+            opacity: 0.6;
+            border: none;
+            height: 80px;
+        }
+
+        .bar1 ul {
+            display: flex;
+            overflow: auto;
+            margin-top: 2px;
+        }
+
+        .bar1 li {
+            margin: 10px 10px -31px 10px;
+            float: left;
+            list-style: none;
+        }
+
+        .navbar {
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+            margin-top: -56px;
+        }
+
+        .navbar li {
+            margin: 125px 10px;
+            float: left;
+            list-style: none;
+        }
+
+        .navbar div a {
+            float: left;
+        }
+
+        .navbar li a {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0px -18px 0px 10px;
+            font-size: 33px;
+            color: black;
+            padding: 70px 19px;
+            text-decoration: none;
+        }
+
+        .searchbox {
+            font-size: 30px;
+            float: right;
+            color: black;
+            margin-top: 130px;
+            margin-right: 140px;
+        }
+
+        .head {
+            font-size: 64px;
+            float: left;
+            padding: 12px 75px;
+        }
+
+        .head a {
+            color: rgb(10, 38, 121);
+            font-family: 'Dancing Script', cursive;
+            margin-top: 100px;
+            margin-left: -19px;
+            margin-right: 152px;
+            font-size: 39px;
+            text-decoration: none;
+        }
+
+        .contain {
+            border: 1px solid black;
+            margin: -71px 0px -19px 0px;
+            padding: 150px 598px 150px 455px;
+            background-image: url('fin.jpg');
+            background-size: 2400px 766px;
+            background-repeat: no-repeat;
+        }
+
+        h1,
+        h2 {
+            font-family: sans-serif;
+            color: black;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+
+        .btn {
+            border-radius: 12px;
+            font-size: 22px;
+            padding: 5px 5px;
+            margin-right: 20px;
+            background-color: rgb(247, 136, 155);
+            color: white;
+        }
+
+        .but {
+            padding-left: 80px;
+            font-size: 50px;
+            color: white;
+            margin: 0px 0px 0px 0px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #but1 {
+            color: white;
+            margin-top: 10px;
+        }
+
+        #but2 {
+            color: white;
+            margin-top: 10px;
+        }
+
+        #but3 {
+            color: white;
+            margin-top: 10px;
+        }
+
+        #but4 {
+            color: white;
+            margin-top: 10px;
+        }
+
+        #but5 {
+            color: white;
+            margin-top: 10px;
+        }
+
+        .vl {
+
+            border-left: 2px solid white;
+            height: 50px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .btnn {
+            font-size: 15px;
+            margin: 14px 16px 21px 300px;
+            border-radius: 12px;
+
+        }
+
+        .colo {
+
+            background-image: url('task2.jpg');
+            background-size: cover;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .item {
+            width: 450px;
+            height: 200px;
+            margin: 60px 0px 10px 200px;
+            padding: 3px;
+            text-decoration: none;
+        }
+
+        h3 {
+            font-size: 25px;
+            color: white;
+        }
+
+        .item p1 {
+            border: 3px solid white;
+            border-radius: 40px;
+            padding: 9px;
+        }
+
+        #exm {
+            border: 3px solid white;
+            border-radius: 40px;
+            padding: 13px;
+        }
+
+        #exp {
+            border: 3px solid white;
+            border-radius: 40px;
+            padding: 13px;
+        }
+
+        .about {
+            background-color: rgba(226, 246, 253, 0.9);
+            height: 640px;
+
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .us {
+            width: 600px;
+            height: 200px;
+            margin: 20px 0px 10px 180px;
+            padding: 3px;
+            text-decoration: none;
+        }
+
+        h4 {
+            font-size: 35px;
+            color: black;
+        }
+
+        .us img {
+            width: 550px;
+            height: 550px;
+            margin-top: 70px;
+        }
+
+        #ide {
+            margin-left: 380px;
+        }
+
+        .read {
+            font-size: 20px;
+            background-color: rgb(163, 210, 252);
+        }
+
+        h5 {
+            font-size: 34px;
+            margin-left: 4px;
+            color: grey;
+            margin-bottom: 4px;
+        }
+
+        .team {
+            background-color: rgba(226, 246, 253, 0.9);
+            height: 430px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .tim {
+            width: 600px;
+            height: 200px;
+            margin: 70px 140px 0px 183px;
+            padding: 3px;
+            text-decoration: none;
+        }
+
+        .tim img {
+            height: 350px;
+            margin-left: 180px;
+        }
+
+        .ttim {
+            background-color: rgba(226, 246, 253, 0.9);
+           
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        h6 {
+            font-size: 24px;
+            margin-left: -3px;
+            color: rgb(105, 104, 104);
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        .clt {
+            margin-top: 60px;
+            margin-left: 10px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .clt img{
+            height: 200px;
+            margin-left: 180px;
+        }
+        .cls{
+            margin-top: 60px;
+            margin-left: 10px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .cls img{
+            height: 200px;
+            margin-left: 70px;
+        }
+        #kj {
+            margin-left: 40px;
+        }
+
+        #kl {
+            margin-left: 40px;
+        }
+        p5{
+            color: black;
+            font-size: 30px;
+            margin-left: 550px;
+            margin-top: 60px;
+        }
+        .sevi{
+            margin-top: 60px;
+        }
+        .serv{
+            display: flex;
+            flex-flow: row wrap;
+            background-color:rgba(226, 246, 253, 0.9);
+        }
+        #det{
+            margin-left: 550px;
+            margin-top: 50px;
+        }
+        #det1{
+            margin-left: 50px;
+            margin-top: 145px;
+        }
+        #det2{
+            margin-left: 50px;
+            margin-top: 145px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <nav class="bar1">
+            <div class="but">
+                <ul>
+                    <ul>
+                        <div class="vl"></div>
+
+                        <div id="but1"><ion-icon name="logo-github"></ion-icon></div>
+
+                        <div class="vl"></div>
+
+                        <div id="but2"><ion-icon name="logo-linkedin"></ion-icon></div>
+
+                        <div class="vl"></div>
+
+                        <div id="but3"><ion-icon name="logo-google"></ion-icon></div>
+
+                        <div class="vl"></div>
+
+                        <div id="but4"><ion-icon name="logo-facebook"></ion-icon></div>
+
+                        <div class="vl"></div>
+
+                        <div id="but5"><ion-icon name="logo-twitter"></ion-icon></div>
+                    </ul>
+
+                    <ul>
+                        <div class="call"
+                            style="font-size:35px; color: white;margin-left:234px;margin-top: 10px;margin-right: 10px;">
+                            <i style="font-size: 35px;" class="fa">&#xf095;+12-3456-7890</i>
+                        </div>
+
+                        <div class="vl"></div>
+
+                        <div class="mail" style="font-size:35px; color: white;margin-top: 10px;margin-left: 10px; "><i
+                                style="font-size:38px" class="fa">&#xf0e0; Demands@gmail.com</i></div>
+
+                        <button class="btnn">CONTACT US</button>
+                    </ul>
+                </ul>
+            </div>
+
+        </nav>
+        <nav class="navbar">
+            <ul>
+                <div class="head">
+                    <a href="#"><b>LANDING PAGE</b></a>
+                </div>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">PAGE</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">TESTING</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a style="background-color: orange;" href="#">BUY NOW</a></li>
+                <div class="searchbox"> &#128269;</div>
+            </ul>
+        </nav>
+    </header>
+    </div>
+    <div class="contain">
+        <h2><strong>WE ARE CREATIVE</strong></h2>
+        <h1> <strong>CREATIVE DIGITAL AGENXCTIVE DIGITAL AGENCY</strong></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium necessitatibus vel architecto iusto!
+            Distinctio?</p>
+        <button class="btn">MAD work</button>
+        <button class="btn">Request Consult</button>
+    </div>
+    <div class="colo">
+        <div class="item">
+            <h3>
+                <p1>&#x1F680;</p1>LAUNCH BUISNESS
+            </h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, excepturi.</p>
+        </div>
+        <div class="item">
+            <h3><i style="font-size:24px" class="fa" id="exp">&#xf025;</i> ONLINE SUPPORT TEAM</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, excepturi.</p>
+        </div>
+        <div class="item">
+            <h3><i style="font-size:24px" class="fa" id="exm">&#xf017;</i> TIME MANAGEMENT</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, excepturi.</p>
+        </div>
+    </div>
+    <div class="about">
+        <div class="us" id="ide">
+            <h4>ABOUT US</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officiis eius nemo. Aspernatur rem
+                tempora deserunt error? Reprehenderit, beatae autem. Sint, quisquam exercitationem nam praesentium ullam
+                laudantium non consectetur. Quos et quis debitis rerum, ab quae facere placeat quia dignissimos. Amet
+                omnis adipisci, incidunt quis voluptatibus nesciunt non alias eos distinctio quaerat beatae facilis quo
+                ratione, ullam blanditiis ea dicta! Exercitationem atque obcaecati, velit asperiores libero culpa
+                repellat nemo cum beatae ea hic omnis earum voluptatum quia distinctio magnam eius. Deserunt, veniam
+                unde explicabo commodi ut magnam tenetur dolorem veritatis debitis natus doloribus earum ratione, sunt
+                corporis rem culpa? Quod illo, numquam nam laboriosam nobis inventore adipisci aut, aperiam natus
+                distinctio rerum, magnam repellendus illum.</p>
+            <button class="read">Read More</button>
+        </div>
+        <div class="us">
+            <img src="pimg.jpg" alt="ERROR">
+        </div>
+    </div>
+    <div class="team">
+        <div class="tim">
+            <img src="team.png" alt="ERROR">
+        </div>
+        <div class="tim">
+            <h5>Say Hello To </h5>
+            <p3><b class="tmn" style="color: rgb(8, 8, 102); font-size: 47px;">Team</b></p3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum velit quis est totam debitis vel
+                doloribus, soluta quos! Laborum harum vitae tenetur fuga soluta distinctio deleniti iste quam explicabo
+                quos.</p>
+        </div>
+    </div>
+    <div class="ttim">
+        <div class="tm">
+            <div class="clt">
+                <div><img src="t1.png" alt="ERROR"></div>
+                <div id="kl">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h6>Karan Scroll</h6>
+                    <p>Data Analyst</p>
+                </div>
+            </div>
+        </div>
+        <div class="tm">
+            <div class="cls">
+            <div><img src="t2.png" alt="ERROR"></div>
+            <div id="kj">
+                <p>Lorem, ipsum dolor sit amet is that consectetur adipisicing elit.</p>
+                <h6>James Hover</h6>
+                <p>Manager</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="serv">
+        <div class="sevi">
+        <div class="send"><P5>OUR SERVICES</P5></div>
+        <div class="send"i id="det"><img src="detail.jpg" alt="NO" ></div>
+        </div>
+        <div class="sevi" id="det1"><img src="det1.jpg" alt="NO"></div>
+        <div class="sevi"  id="det2">
+            <div><img src="det2.jpg" alt="NO"></div>
+        </div>
+    </div>
+</body>
+
+</html>
