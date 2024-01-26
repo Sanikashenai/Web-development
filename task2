@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfol</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script&family=Roboto&display=swap"
+        rel="stylesheet">
+    <style>
+        .container p {
+            color: black;
+            font-size: 60px;
+            margin-top: 40px;
+            padding-left: 80px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .contain {
+            font-size: 38px;
+            color: rgb(92, 90, 94);
+            font-family: 'Roboto', sans-serif;
+            padding: 0px 0px 0px 80px;
+            text-align: left;
+            line-height: 1.3em;
+        }
+
+        a {
+            margin: 10px 40px 20px 80px;
+            text-decoration: none;
+        }
+
+        .btn {
+            color: white;
+            background-color: rgb(37, 37, 109);
+            height: 70px;
+            padding: 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 22px;
+            border-radius: 6px;
+        }
+
+        .btn a:hover {
+            color: gray;
+        }
+
+        .btn a:active {
+            color: brown;
+        }
+
+        .navbar {
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+            margin-bottom: 220px;
+        }
+
+        .navbar li {
+            margin: 49px 10px;
+            float: right;
+            list-style: none;
+        }
+
+        .navbar li a {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 65px 24px 220px 47px;
+            font-size: 25px;
+            color: black;
+            padding: 3px 2px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+            color: gray;
+        }
+
+        .navbar li a:active {
+            color: brown;
+        }
+
+        .he {
+            font-size: 64px;
+            float: left;
+            padding: 12px 75px;
+        }
+
+        .he a {
+            color: rgb(10, 38, 121);
+            font-family: 'Dancing Script', cursive;
+            margin-top: 240px;
+            margin-left: 30px;
+        }
+
+        .item img {
+            height: 725px;
+            width: 1200px;
+            padding-right: 20px;
+        }
+
+        .container {
+            height: 700px;
+            width: 100%;
+            border: 2px solid white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .item {
+            width: 1200px;
+            height: 700px;
+            background-color: white;
+            border: 2px solid white;
+            margin: 2px;
+            padding: 3px;
+        }
+
+        #item1 {
+            width: 40%;
+        }
+
+        .but {
+            padding-left: 80px;
+            font-size: 60px;
+            color: blue;
+            margin: 50px 20px 70px 0px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #but1 {
+            margin-right: 20px;
+            color: black;
+        }
+
+        #but2 {
+            margin-right: 20px;
+            color: rgb(28, 28, 163);
+        }
+
+        #but3 {
+            margin-right: 20px;
+            color: red;
+        }
+
+        #but4 {
+            margin-right: 20px;
+            color: rgb(13, 13, 85);
+        }
+
+        .container1 {
+            margin-top: 100px;
+            height: 700px;
+            width: 100%;
+            border: 2px solid white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .item1 {
+            width: 1200px;
+            height: 700px;
+            background-color: white;
+            border: 2px solid white;
+            margin: 2px;
+            padding: 3px;
+        }
+
+        .contain1 p {
+            font-size: 30px;
+            padding-left: 45px;
+            padding-right: 30px;
+            color: grey;
+        }
+
+        .sym {
+            display: flex;
+            flex-direction: row;
+            padding-left: 80px;
+            font-size: 60px;
+            color: grey;
+            margin: 50px 20px 70px 0px;
+        }
+
+        #sym1,
+        #sym2,
+        #sym3,
+        #sym4,
+        #sym5,
+        #sym6,
+        #sym7,
+        #sym8 {
+            padding-right: 50px;
+        }
+
+        .contain2 p {
+            font-size: 30px;
+            padding-left: 40px;
+            color: grey;
+        }
+
+        .item1 img {
+            height: 700px;
+            width: 1200px;
+            padding-right: 20px;
+        }
+
+        .item1 h1 {
+            padding-left: 40px;
+            font-size: 60px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .container2 {
+            margin-top: 100px;
+            height: 700px;
+            width: 100%;
+            border: 2px solid white;
+            display: flex;
+
+            justify-content: center;
+        }
+
+        .item2 {
+            width: 1200px;
+            height: 700px;
+            background-color: white;
+            border: 2px solid white;
+            margin: 2px;
+            padding: 3px;
+            display: flex;
+            flex-flow: column wrap;
+            margin-left: 200px;
+            margin-right: 70px;
+        }
+
+        .item2 h4 {
+            text-align: center;
+            padding-bottom: 20px;
+            font-size: 50px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-left: 400px;
+        }
+
+        #myProgress {
+            background-color: 2px solid white;
+            border-radius: 12px;
+            width: 100%;
+            background-color: #ddd;
+        }
+
+        #myBar {
+            width: 1%;
+            height: 30px;
+            background-color: blue;
+
+        }
+
+        #myProgress1 {
+            background-color: 2px solid white;
+            border-radius: 12px;
+            width: 100%;
+            background-color: #ddd;
+        }
+
+        #myBar1 {
+            width: 1%;
+            height: 30px;
+            background-color: blue;
+        }
+
+        #myProgress2 {
+            width: 100%;
+            background-color: #ddd;
+            background-color: 2px solid white;
+            border-radius: 12px;
+        }
+
+        #myBar2 {
+            width: 1%;
+            height: 30px;
+            background-color: blue;
+        }
+
+        .mkd {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .mkd img {
+            width: 900px;
+            height: 600px;
+            margin-right: 50px;
+        }
+
+        .btm {
+            width: 130px;
+            margin-bottom: 20px;
+        }
+
+        p9 {
+            font-size: 23px;
+        }
+
+        .container3 {
+            display: flex;
+            flex-flow: row wrap;
+            
+        }
+
+        .box1 {
+            border: 5px solid black;
+            border-radius: 13px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        #box2 {
+            border: 5px solid black;
+            border-radius: 13px;
+            padding-left: 35px;
+            width: 696px;
+            padding-right: 32px;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            margin-left: 50px;
+            background-color: rgba(226, 246, 253, 0.9);
+        }
+        #box1{
+            border: 5px solid black;
+            border-radius: 13px;
+            margin-left: 400px;
+            padding-left: 35px;
+            width: 696px;
+            padding-right: 32px;
+            padding-top: 32px;
+            background-color: rgba(226, 246, 253, 0.9);
+            padding-bottom: 32px;
+        }
+        h6{
+            font-size: 45px;
+            margin-left: 982px;
+        }
+        h11{
+            font-size: 37px;
+            margin-left: 70px;
+            margin-bottom: 20px;
+        }
+        p11{
+            margin-left: 70px;
+            font-size: 23px;
+        }
+        #box4 {
+            border: 5px solid black;
+            border-radius: 13px;
+            padding-left: 35px;
+            width: 696px;
+            padding-right: 32px;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            margin-left: 50px;
+            background-color: rgba(226, 246, 253, 0.9);
+        }
+        #box3{
+            border: 5px solid black;
+            border-radius: 13px;
+            margin-left: 400px;
+            padding-left: 35px;
+            width: 696px;
+            padding-right: 32px;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            background-color: rgba(226, 246, 253, 0.9);
+        }
+        .box2 {
+            border: 5px solid black;
+            border-radius: 13px;
+            display: flex;
+            flex-flow: row wrap;
+            margin-top: 40px;
+        }
+        h12{
+            font-size: 45px;
+            margin-left: 1000px;
+            margin-bottom: 70px;
+        }
+        #startup{
+            margin-top: 50px;
+        }
+        p12{
+            font-size: 30px;
+            margin-left: 810px;
+        }
+        .cld img{
+            width: 420px;
+            height: 450px;
+        }
+
+        .simm{
+            display: flex;
+            flex-flow: row wrap;
+
+        }
+        .big{
+            margin-top: 100px;
+        }
+        #cld1{
+            margin-left: 750px;
+            
+        }
+        #cld2{
+            margin-left: 70px;
+        }
+     </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <div class="he">
+                    <a href="#"><strong>&lt;/Myself&gt;</strong></a>
+                </div>
+                <li><a href="#">Conatact Me</a></li>
+                <li><a href="#">Talks</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Achievements</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Open source</a></li>
+                <li><a href="#">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <div class="container">
+        <div class="item" id="item-1">
+            <p>Hii All I'm Sanika &#128075;</p>
+            <div class="contain">
+                <p1>A Passionate Full Stack Software Developer &#128640;having an experience of building Web and Mobile
+                    applications with Javascript /Reactjs / Nodejs / ReactNative and some Other cool libraries and
+                    framework
+                </p1>
+            </div>
+            <div class="but">
+                <div id="but1"><ion-icon name="logo-github"></ion-icon></div>
+                <div id="but2"><ion-icon name="logo-linkedin"></ion-icon></div>
+                <div id="but3"><ion-icon name="logo-google"></ion-icon></div>
+                <div id="but4"><ion-icon name="logo-facebook"></ion-icon></div>
+                <div id="but5"><ion-icon name="logo-twitter"></ion-icon></div>
+            </div>
+            <a href="" class="btn">CONTACT ME</a>
+            <button class="btn">SEE MY RESUME</button>
+        </div>
+        <div class="item" id="item-2">
+            <img src="imag1.jpg" alt="Error">
+        </div>
+    </div>
+    <div class="container1">
+        <div class="item1">
+            <img src="img2.jpg" alt="ERROR">
+        </div>
+        <div class="item1">
+            <h1><strong>What i do</strong></h1>
+            <div class="contain1">
+                <p>CRAZY FULL STACK DEVELOPER WHO WANT TO EXPLORE EVERY TECH STACK</p>
+            </div>
+            <div class="sym">
+                <div id="sym1"><ion-icon name="logo-css3"></ion-icon></div>
+                <div id="sym2"><ion-icon name="logo-css3"></ion-icon></div>
+                <div id="sym3"><ion-icon name="logo-sass"></ion-icon></div>
+                <div id="sym4"><ion-icon name="logo-javascript"></ion-icon></div>
+                <div id="sym5"><ion-icon name="logo-react"></ion-icon></div>
+                <div id="sym6"><ion-icon name="logo-nodejs"></ion-icon></div>
+                <div id="sym7"><ion-icon name="logo-npm"></ion-icon></div>
+                <div id="sym8"><ion-icon name="server-outline"></ion-icon></div>
+                <div id="sym9"><ion-icon name="logo-python"></ion-icon></div>
+            </div>
+            <div class="contain2">
+                <p>&#9889 Develop highly interactive Front end/user for mibile/web appilcations</p>
+                <p>&#9889 Prograssive Web Applications(PWA) in normal and SPA stocks</p>
+                <p>&#9889 Integration of third party services such as Firebase/AWS/digital ocean</p>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="item2">
+            <div class="mkd">
+                <h4>Proficiency</h4>
+            </div>
+            <p9>Frontend/Design</p9>
+            <div id="myProgress" class="mkd">
+
+                <div id="myBar"></div>
+            </div>
+
+            <br>
+            <button onclick="move()" class="btm">Click Me</button>
+
+            <script>
+                var i = 0;
+                function move() {
+                    if (i == 0) {
+                        i = 1;
+                        var elem = document.getElementById("myBar");
+                        var width = 1;
+                        var id = setInterval(frame, 10);
+                        function frame() {
+                            if (width >= 100) {
+                                clearInterval(id);
+                                i = 0;
+                            } else {
+                                width++;
+                                elem.style.width = width + "%";
+                            }
+                        }
+                    }
+                }
+            </script>
+
+            <p9>Backend</p9>
+            <div id="myProgress1" class="mkd">
+
+                <div id="myBar1"></div>
+            </div>
+            <br>
+            <button onclick="move1()" class="btm">Click Me</button>
+
+            <script>
+                var i = 0;
+                function move1() {
+                    if (i == 0) {
+                        i = 1;
+                        var elem = document.getElementById("myBar1");
+                        var width = 1;
+                        var id = setInterval(frame, 10);
+                        function frame() {
+                            if (width >= 100) {
+                                clearInterval(id);
+                                i = 0;
+                            } else {
+                                width++;
+                                elem.style.width = width + "%";
+                            }
+                        }
+                    }
+                }
+            </script>
+            <p9>Programming</p9>
+            <div id="myProgress2" class="mkd">
+
+                <div id="myBar2"></div>
+            </div>
+
+            <br>
+            <button onclick="move2()" class="btm">Click Me</button>
+
+            <script>
+                var i = 0;
+                function move2() {
+                    if (i == 0) {
+                        i = 1;
+                        var elem = document.getElementById("myBar2");
+                        var width = 1;
+                        var id = setInterval(frame, 10);
+                        function frame() {
+                            if (width >= 100) {
+                                clearInterval(id);
+                                i = 0;
+                            } else {
+                                width++;
+                                elem.style.width = width + "%";
+                            }
+                        }
+                    }
+                }
+            </script>
+        </div>
+        <div class="mkd"><img src="woman1.jpg" alt="NO"></div>
+
+    </div>
+    <h6>OPEN SOURCE PROJECTS</h6>
+    <div class="container3">
+        
+        <div class="box1" id="box1">
+            <h11><b>React-blog</b></h11>
+            <p11>React+github isssues &#x1F449; your personal blog &#x1F525;</p11>
+        </div>
+        <div class="box1" id="box2">
+        <h11><b>Developer folio</b></h11>
+        <p11>Software Developer Template portfolio tha help youshowcase your work and skills as sofware developer &#9889;</p11>
+    </div>
+    <div class="box2" id="box3">
+        <h11><b>PWA OLX App</b></h11>
+        <p11>OLX progressive Web App with offline lecture,messging and add to favourite&#9889;</p11>
+    </div>
+    <div class="box2" id="box4">
+        <h11><b>Locate Me</b></h11>
+        <p11>&#9889; A react native location application to find your ones's</p11>
+    </div>   
+    </div>
+    <div class="big">
+        <h12><b>BIG PROJECTS</b></h12>
+        <div id="startup"><p12>Some Startup and companies that i help to create their TECH</p12></div>
+        <div class="simm">
+            <div class="cld" id="cld1"><img src="tata-1.svg" alt="mn"></div>
+            <div class="cld" id="cld2"><img src="amaze.png" alt="MO"></div>
+        </div>
+    </div>
+</body>
+
+</html>
